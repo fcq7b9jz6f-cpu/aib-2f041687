@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كرونوس أوريجين | تحفة فنية في قياس الزمن</title>
+    <meta name="description" content="اكتشف ساعة كرونوس أوريجين، حيث تلتقي الحرفية العريقة بالتصميم المعاصر. قطعة فنية تجسد دقة الوقت والفخامة.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="importmap">{
+      "imports":{
+        "three":"https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <canvas id="webgl-canvas"></canvas>
+
+    <header class="hero">
+        <h1>كرونوس أوريجين</h1>
+        <p>تحفة تتجاوز الزمن.</p>
+    </header>
+
+    <main id="journey">
+        <div class="model-container">
+            <model-viewer id="watch-model" src="https://images.pexels.com/photos/34165093/pexels-photo-34165093.png?auto=compress&cs=tinysrgb&h=650&w=940" 
+                ar ar-modes="webxr scene-viewer quick-look" 
+                camera-controls 
+                disable-zoom
+                camera-orbit="0deg 75deg 0.5m"
+                auto-rotate
+                rotation-per-second="10deg"
+                interaction-prompt="none"
+                shadow-intensity="1"
+                alt="A 3D model of a luxury watch">
+            </model-viewer>
+        </div>
+
+        <div class="content-scroll">
+            <section id="movement" class="content-section">
+                <div class="content-wrapper">
+                    <h2>الحركة الأوتوماتيكية</h2>
+                    <h3>عيار K-01</h3>
+                    <p>في قلب "أوريجين" ينبض عيار K-01، وهو حركة ميكانيكية ذاتية التعبئة بالكامل. تمثل هذه الحركة شهادة على الهندسة الدقيقة، حيث تضمن دقة لا مثيل لها واحتياطي طاقة يصل إلى 72 ساعة. كل مكون مصقول ومجمع يدويًا، ويمكن رؤية رقصته المعقدة من خلال ظهر العلبة المصنوع من كريستال الياقوت.</p>
+                    <img src="https://images.pexels.com/photos/29833484/pexels-photo-29833484.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Close up on the intricate movement of the watch.">
+                </div>
+            </section>
+
+            <section id="dial" class="content-section">
+                <div class="content-wrapper">
+                    <h2>الميناء</h2>
+                    <h3>وضوح وظل</h3>
+                    <p>الميناء، المحمي بكريستال ياقوتي مقاوم للانعكاس، هو تحفة فنية من البساطة. مؤشرات مصقولة يدويًا وعقارب حادة تطفو فوق سطح أسود معالج بالجلفان. يتم تطبيق مادة Super-LumiNova® بمهارة لتوفير وضوح استثنائي في ظروف الإضاءة المنخفضة، مما يضمن قراءة الوقت بلمحة واحدة، ليلاً أو نهارًا.</p>
+                    <img src="https://images.pexels.com/photos/27453102/pexels-photo-27453102.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Detailed shot of the watch dial.">
+                </div>
+            </section>
+
+            <section id="case" class="content-section">
+                <div class="content-wrapper">
+                    <h2>العلبة</h2>
+                    <h3>نحت من الفولاذ</h3>
+                    <p>تم نحت العلبة بقطر 41 مم من كتلة صلبة من الفولاذ المقاوم للصدأ 904L، وهو سبيكة معروفة بمقاومتها للتآكل ومظهرها المصقول بشكل استثنائي. يجمع التصميم بين الأسطح المصقولة والملمعة، مما يخلق تفاعلًا ديناميكيًا مع الضوء يبرز الخطوط الهندسية القوية للعلبة.</p>
+                    <img src="https://images.pexels.com/photos/29506603/pexels-photo-29506603.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Side view of the watch case, highlighting its material.">
+                </div>
+            </section>
+
+            <section id="craftsmanship" class="content-section">
+                 <div class="content-wrapper">
+                    <h2>الحرفية</h2>
+                    <h3>إرث من الإتقان</h3>
+                    <p>كل ساعة من ساعات كرونوس هي تتويج لقرون من الخبرة في صناعة الساعات. من التصميم الأولي إلى التجميع النهائي، يكرس الحرفيون المهرة لدينا أنفسهم لتحقيق الكمال. هذه ليست مجرد أداة لقياس الوقت، بل هي إرث يُمرر عبر الأجيال.</p>
+                    <img src="https://images.pexels.com/photos/29488851/pexels-photo-29488851.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A watchmaker meticulously working on a watch component.">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="specs-section">
+        <h2>المواصفات التقنية</h2>
+        <div class="specs-table">
+            <div class="spec-item"><span>العلبة</span><span>فولاذ 904L، قطر 41 مم</span></div>
+            <div class="spec-item"><span>الحركة</span><span>عيار K-01 أوتوماتيكي</span></div>
+            <div class="spec-item"><span>احتياطي الطاقة</span><span>72 ساعة</span></div>
+            <div class="spec-item"><span>الميناء</span><span>أسود معالج بالجلفان، Super-LumiNova®</span></div>
+            <div class="spec-item"><span>البلور</span><span>ياقوت مقاوم للخدش والانعكاس</span></div>
+            <div class="spec-item"><span>مقاومة الماء</span><span>100 متر / 330 قدم</span></div>
+            <div class="spec-item"><span>السوار</span><span>جلد تمساح أسود مع مشبك قابل للطي</span></div>
+        </div>
+    </section>
+
+    <footer class="acquire-section">
+        <h2>اقتنِ تحفتك الخاصة</h2>
+        <p>تواصل مع أحد وكلائنا المعتمدين لتجربة كرونوس أوريجين شخصيًا أو للاستفسار عن عملية الشراء.</p>
+        <button class="cta-button">استفسر الآن</button>
+    </footer>
+
+    <script type="module" src="scene.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
